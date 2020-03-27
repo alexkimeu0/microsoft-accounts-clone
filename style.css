@@ -133,6 +133,7 @@ a {
 
 .section-b .container {
     display: grid;
+    grid-gap: 1rem;
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     align-items: center;
@@ -161,6 +162,72 @@ a {
     margin: 1rem 2rem;
 }
 
+/* Accounts Section */
+.section-c {
+    background: #f2f2f2;
+    color: #000;
+    width: 100%;
+}
+
+.section-c .container h2 {
+    font-size: 46px;
+    line-height: 56px;
+    padding: 37px 0 3px;
+    font-weight: 600;
+    letter-spacing: -.01em;
+    text-align: center;
+    margin: 0;
+}
+
+.section-c .container .head-text {
+    text-align: center;
+    padding: 0 20%;
+    margin-bottom: 60px;
+}
+
+.section-c .container .section-c-inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1rem;
+}
+
+.section-c .section-c-inner h3, p {
+    margin: 0;    
+}
+
+.section-c .container .section-c-inner div {
+    border-left: 1px solid rgba(0,0,0,.1);  
+    text-align: left;
+}
+
+.section-c .container .section-c-inner div h3, p, img, a {
+    margin: 0.8rem 2rem;
+}
+
+.section-c .container .section-c-inner div:first-child {
+    border-left: none;
+}
+
+.section-c .container .section-c-inner div:nth-child(5) {
+    border-left: none;
+}
+
+.section-c .container .section-c-inner div:nth-child(9) {
+    border-left: none;
+}
+
+.section-c-inner a {
+    color: #0067b8;
+    font-weight: bold;
+}
+
+.section-c-inner a:hover {
+    border-bottom: 2px solid #0067b8;
+}
+
 /* Utilities */
 .btn {
     color: #0067b8;
@@ -170,3 +237,4 @@ a {
 .btn:hover {
     border-bottom: 2px solid #0067b8;
 }
+
