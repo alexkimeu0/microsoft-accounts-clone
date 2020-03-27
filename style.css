@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: #000;
+    line-height: 1.5;
+    background: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.container {
+    width: 95%;
+    max-width: 1240px;
+    margin: auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	color: #fff;
+}
+
+p {
+	margin: 0.5rem 0;
+}
+
+/* Navbar */
+.main-nav {
+    padding: 0.8rem;
+    font-size: 1rem;
+}
+
+.main-nav .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+
+.main-nav .container .left-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: flex-start;
+}
+
+.main-nav .container .left-links .logo {
+    height: 25px;
+}
+
+.main-nav .container .left-links li:nth-child(2) {
+    font-weight: bold;
+    border-left: 2px solid #333;
+}
+
+.main-nav .container .right-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: flex-end;
+}
+
+.main-nav .container a {
+    padding: 0 1rem;
+}
+
+/* Section a */
+.section-a {
+    background: url("https://compass-ssl.microsoft.com/assets/3f/be/3fbe8ba9-c38a-4188-8812-f56a14d66b67.png?n=Hero_VP4_1399x525.png") no-repeat center center/cover;
+    height: 79vh;
+    color: #fff;
+    position: relative;
+}
+
+.section-a .section-a-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+}
+
+.section-a .section-a-inner h1 {
+    margin-top: 11rem;
+    max-height: 168px;
+}
+
+.section-a .section-a-inner h1, p, .section-a-links {
+    margin-left: 5rem;
+}
+
+.section-a .section-a-inner p {
+    line-height: 16px;
+    padding: 3px 0 3px;
+    overflow: hidden;
+    box-sizing: content-box;
+    max-height: 48px;
+    font-weight: 100;
+}
+
+.section-a .section-a-links {
+    margin-top: 2.5rem;
+}
+
+.section-a .section-a-links a:first-child {
+    background: #0067b8;
+    padding: 12px 24px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.section-a .section-a-links a:last-child {
+    color: #fff;
+    font-weight: bold;
+    margin-left: 2rem;
+}
+
+.section-a .section-a-links span:hover {
+    border-bottom: 2px solid #fff;
+}
