@@ -113,7 +113,7 @@ a {
     margin-left: 5rem;
 }
 
-.section-a .section-a-links a {
+.section-a .section-a-links a:first-child {
     margin-left: 5rem;
 }
 
@@ -132,7 +132,7 @@ a {
 
 .section-a .section-a-links a:first-child {
     background: #0067b8;
-    padding: 12px 24px;
+    padding: 12px 20px;
     color: #fff;
     font-weight: bold;
 }
@@ -140,7 +140,7 @@ a {
 .section-a .section-a-links a:last-child {
     color: #fff;
     font-weight: bold;
-    margin-left: 2rem;
+    margin-left: 0.1rem;
 }
 
 .section-a .section-a-links span:hover {
@@ -355,6 +355,14 @@ a {
     grid-gap: 1rem;
 }
 
+.section-b .container div:nth-child(n+5) {
+    display: none;
+}
+
+.section-c .container .section-c-inner div:nth-child(n+7) {
+    display: none;
+}
+
 }
 
 
@@ -377,7 +385,7 @@ a {
 
 .section-a .section-a-links a:first-child {
     margin-top: 10rem;
-    padding: 12px 20px;
+    margin-left: 0;
     text-align: center;
 }
 
@@ -391,13 +399,24 @@ a {
     margin-bottom: 1rem;
 }
 
+.section-b .container div:nth-child(n+5) {
+    display: none;
+}
+
 .section-c .container .section-c-inner {
     grid-template-columns: 1fr;
     grid-gap: 1rem;
 }
 
+.section-c .container .section-c-inner div:nth-child(n+7) {
+    display: none;
+}
 
 .section-c .container .head-text {
+    display: none;
+}
+
+.footer .container  ul a{
     display: none;
 }
 
